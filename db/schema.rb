@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150515002816) do
+ActiveRecord::Schema.define(version: 20160317201055) do
 
   create_table "reviews", force: :cascade do |t|
     t.integer "show_id"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20150515002816) do
   create_table "shows", force: :cascade do |t|
     t.string "title"
     t.text   "description"
+    t.float  "average_review_score", default: 0.0
   end
 
 end

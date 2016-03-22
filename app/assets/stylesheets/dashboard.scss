@@ -1,0 +1,51 @@
+// Place all the styles related to the dashboard controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$button-container-background: #eee;
+$button-text-color: #fff;
+$button-background-top: #07575b;
+$button-background-bottom: #66a5ad;
+$button-border-top-color: #ffbb00;
+$button-border-bottom-color: #a23820;
+
+.button-container {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  background-color: $button-container-background;
+
+  .button {
+    background: linear-gradient($button-background-top, $button-background-bottom);
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid transparent;
+    -moz-border-image: -moz-linear-gradient(top, $button-border-top-color 0%, $button-border-bottom-color 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, $button-border-top-color 0%, $button-border-bottom-color 100%);
+    border-image: linear-gradient(to bottom, $button-border-top-color 0%, $button-border-bottom-color 100%);
+    border-image-slice: 1;
+  }
+
+/*  .button {
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    background: linear-gradient($button-background-top, $button-background-bottom);
+    background-clip: padding-box;
+    padding: 10px;
+    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+  }
+
+  .button::after {
+    position: absolute;
+    top: -2px; bottom: -2px;
+    left: -2px; right: -2px;
+    background: linear-gradient(red, blue);
+    content: '';
+    z-index: -1;
+    border-radius: 2px;
+  }*/
+
+}
